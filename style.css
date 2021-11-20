@@ -1,0 +1,56 @@
+canvas {
+    border: 3px solid;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#graphpowerset,
+#graphdownset,
+#graphrappr {
+    border: 3px solid;
+    width: 400px;
+    height: 400px;
+}
+
+#graphdownset {
+    order: 2;
+}
+
+#presentationp {
+    text-align: center;
+    font-size: 1vw;
+}
+
+button {
+    outline: none;
+    font-family: Verdana, Geneva, sans-serif;
+    border: 1px solid;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    border: 1px solid;
+    background-color: gray;
+}
+
+h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+#containerb {
+    margin: 2%;
+}

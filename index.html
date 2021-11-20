@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lorenzo Ienzi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesi Ienzi Lorenzo</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.uninsubria.it/sites/default/files/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+    <script src="index.js"></script>
+    <script src="canvas.js"></script>
+    <script src="downset.js"></script>
+    <script src="subset.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>POSET E DOWNSET</h1>
+    <div id="containerc&i" class="container">
+      <div id="graphpowerset">
+        <p id="presentationp">
+          Per disegnare il grafo, all'interno del quadrato grigio: <br />-
+          Clicca il tasto destro del mouse per creare un nodo;<br />- Tieni
+          premuto il tasto sinistro all'interno di un nodo e rilascialo in un
+          altro per creare un arco; <br />-Per disegnare un nuovo grafo, clicca
+          il bottone reset. <br />
+          <br />
+          Per creare il powerset o l'insieme dei downset, clicca il bottone
+          corrispondente.
+        </p>
+      </div>
+      <div id="graphdownset"></div>
+      <div id="graphrappr" style="display: none"></div>
+    </div>
+    <div id="containerb" class="container">
+      <button onclick="assignpowerset()" lang="en">POWERSET</button>
+      <button id="graphbutton" onclick="graph()">GRAFO</button>
+      <button onClick="window.location.reload();" lang="en">REFRESH</button>
+      <button id="downsetbutton" onclick="downset()">DOWNSET</button>
+    </div>
+  </body>
+</html>
